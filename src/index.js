@@ -1,6 +1,8 @@
-// complete the function
+// Prime numbers are numbers that can only be evenly divisible by itself and 1.
 function prime (num) {
-  // code goes here
+  for(var i = 2;i<num;i++)
+  if(num % i === 0) return false;
+  return num > 1;
 }
 
 function solution (arg) {
